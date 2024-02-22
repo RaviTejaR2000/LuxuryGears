@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="SignIn.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--header fixed -->
+    <nav class="header">
+        <div class="headerbox">
+            <div class="logo">
+                <img src="Logo.png" alt="" height="50px" width="100%">
+            </div>
+            <ul>
+                <li class="list">
+                    <a href="index.html" class="navlist">Home</a>
+                    <a href="ContactUs.html" class="navlist">Contact</a>
+                    <a href="AboutUs.html" class="navlist">About US</a>
+                    <a href="Gallery.html" class="navlist">Gallery</a>
+                </li>
+            </ul>
+            <a href="SignUp.html"><button class="button">Sign UP</button></a>
+            
+        </div>
+    </nav>
+    <!--header fixed -->
+
+    <!-- center content box -->
+    <div class="container">
+        <p style="color: #B31312;">Login</p>
+          <div class="form">
+            <form onsubmit="return empty()" action="index.html" >
+                
+                <div class="inputbox">
+                    <input class="mail" type="email" placeholder="Enter your Email">
+                    <i class="fa-solid fa-envelope email"></i>
+                </div>
+                <h6 class="emailalert">! Please Enter your Email Address </h6>
+                <div class="inputbox">
+                    <input class="pass" type="password" placeholder="Enter Your Password" >
+                    <i class="fa-solid fa-lock lock"></i>
+                    <i class="fa-solid fa-eye-slash eye close"></i>
+                    <i class="fa-sharp fa-solid fa-eye open"></i>
+                </div>
+                 <h6 class="passwordalert">! Please Enter Your Password </h6>
+                <div class="option">
+                    <span class="checkbox">
+                        <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                    </span>
+                    
+                    <a href="#" class="forgot">Forgot Password?</a>
+
+                </div>
+
+                <input class="button2" type="submit" value="Login Now">
+                
+                <div class="icons">
+                    <p>----Or Login Using----</p>
+                    <div class="icondiv">
+                        <a href=""><i class="fa-brands fa-square-facebook fb"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram insta"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter tweet"></i></a>
+                        <a href=""><i class="fa-brands fa-square-google-plus google"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="signup">
+                    Don't Have an Account? <a href="SignUp.html">Sign Up</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- center content box -->
+    <script src="SignIn.js"></script>
+</body>
+</html>
