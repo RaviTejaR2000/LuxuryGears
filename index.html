@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <!--header fixed -->
+    <nav class="header">
+        <div class="headerbox">
+            <div class="logo">
+                <img src="Logo.png" alt="" height="50px" width="100%">
+            </div>
+            <ul>
+                <li class="list">
+                    <a href="index.html" class="navlist">Home</a>
+                    <a href="ContactUs.html" class="navlist">Contact</a>
+                    <a href="AboutUs.html" class="navlist">About US</a>
+                    <a href="Gallery.html" class="navlist">Gallery</a>
+                </li>
+            </ul>
+            <div class="sell">
+                <button class="sellbtn" onclick="box()">Sell A Car</button>
+                <i class="fa-solid fa-car"></i>
+            </div>
+            <div>
+                <a href="SignIn.html"><button class="button">LogIn</button></a>
+                <a href="SignUp.html"><button class="button">Sign UP</button></a>
+            </div>
+        </div>
+    </nav>
+    <!--header fixed -->
+
+    <!--sell content box-->
+        <div class="bgblur"></div>
+        <div class="sellbox">
+            <div class="cross">
+                <p>Please Fill The Form Below To Sell a Car</p>
+                <i class="fa-solid fa-x" onclick="click()"></i>
+            </div>
+            <hr>
+            <div class="inputbox">
+                <input type="text" placeholder="Seller Name">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inputbox">
+                <input type="tel" placeholder="Phone Number" maxlength="10">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="inputbox">
+                <input type="text" placeholder="Car Brand">
+            <i class="fa-solid fa-car"></i>
+        </div>
+        <div class="inputbox">
+            <input type="text" placeholder="Car Model">
+            <i class="fa-solid fa-car-side"></i>
+        </div>
+        <div class="inputbox two">
+            <div class="inputbox">
+                <input type="text" placeholder="Varient">
+                <i class="fa-solid fa-gas-pump"></i>
+            </div>
+            <div class="inputbox">
+                <input type="tel" placeholder="Year" maxlength="4">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            
+        </div>
+        <div class="inputbox">
+            <input type="text" placeholder="Price">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+        </div>
+        <div class="inputbox">
+            <select name="" id="select"  >
+                <option value="Transmission" ></option>
+                <option value="AutoMatic">AutoMatic</option>
+                <option value="Manual">Manual</option>
+            </select>
+            <i class="fa-solid fa-gauge"></i>
+        </div>
+        <div class="inputbox">
+            <input type="tel" id="liscense" placeholder="Car Liscense Number" >
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="btn">
+            <button>Sell</button>
+        </div>
+        <!-- <hr> -->
+        <div class="close">
+            <button class="end" onclick="end()">Close</button>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <!--sell content box-->
+    
+    <div class="introbox">
+        <h1>Luxury Gears</h1>
+        <h3>Best Luxury Cars In Chennai</h3>
+        <h2>Start.Rev.Ride at Lovable Price !</h2>
+        <h5>For All Your Luxury and Exotic Automotive Needs</h5>
+        <div class="caranime">
+            <!-- <div class="line line1"><img src="car png.png" alt="" height="500px" width="60px"></div>
+            <div class="line line2"></div> -->
+            <div class="line1"> 
+                <!-- <hr class="line"> -->
+                <img src="car right move.png" alt="" class="imgone" height="40px" width="180px">
+            </div>
+            <div class="line1"> 
+                <!-- <hr class="line"> -->
+                <img src="car left move.png" alt="" class="imgtwo" height="40px" width="180px">
+            </div>
+        </div>    
+    </div>
+
+<section>
+    <div class="namebox">
+        <div class="smalldiv">
+            <div class="smallbox"></div>
+            <h3>Recent Popular</h3>
+        </div>
+    </div>
+
+
+    <!-- car sale box -->
+
+    <div class="carbox">
+        <div class="card">
+            <div class="imgbox">
+                <img src="box211.jpg" alt="">
+            </div>
+            <div class="contents">
+                <div>
+                    <h3 style="color: #B31312;">Car Name:</h3>
+                    <h3 style="font-weight: 500;">Lexus ES</h3>
+                </div>
+                <div>
+                    <div>
+                        <h3 style="color: #B31312;">Year:</h3>
+                        <h3 style="font-weight: 500;">2022</h3>
+                    </div>
+                    <div class="price">
+                        <i class="fa-solid fa-indian-rupee-sign" style="color: white;"></i>
+                        <h3 style="color: white;">62,00,000</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3>Automatic</h3>
+                    <span><h3>|</h3></span>
+                    <h3>Petrol</h3>
+                    <span><h3>|</h3></span>
+                    <h3>15500<h3>KMS</h3></h3>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="box410.jpg" alt="">
+            </div>
+            <div class="contents">
+                <div>
+                    <h3 style="color: #B31312;">Car Name:</h3>
+                    <h3 style="font-weight: 500;">Chevrolet Camaro</h3>
+                </div>
+                <div>
+                    <div>
+                        <h3 style="color: #B31312;">Year:</h3>
+                        <h3 style="font-weight: 500;">2017</h3>
+                    </div>
+                    <div class="price">
+                        <i class="fa-solid fa-indian-rupee-sign" style="color: white;"></i>
+                        <h3 style="color: white;">80,00,000</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3>Manual</h3>
+                    <span><h3>|</h3></span>
+                    <h3>Petrol</h3>
+                    <span><h3>|</h3></span>
+                    <h3>30000<h3>KMS</h3></h3>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="box308.jpg" alt="">
+            </div>
+            <div class="contents">
+                <div>
+                    <h3 style="color: #B31312;">Car Name:</h3>
+                    <h3 style="font-weight: 500;">Lamborghini URUS</h3>
+                </div>
+                <div>
+                    <div>
+                        <h3 style="color: #B31312;">Year:</h3>
+                        <h3 style="font-weight: 500;">2023</h3>
+                    </div>
+                    <div class="price">
+                        <i class="fa-solid fa-indian-rupee-sign" style="color: white;"></i>
+                        <h3 style="color: white;">3,62,00,000</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3>Automatic</h3>
+                    <span><h3>|</h3></span>
+                    <h3>Petrol</h3>
+                    <span><h3>|</h3></span>
+                    <h3>12000<h3>KMS</h3></h3>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="box307.jpg" alt="">
+            </div>
+            <div class="contents">
+                <div>
+                    <h3 style="color: #B31312;">Car Name:</h3>
+                    <h3 style="font-weight: 500;">Rolls Royce Wraith </h3>
+                </div>
+                <div>
+                    <div>
+                        <h3 style="color: #B31312;">Year:</h3>
+                        <h3 style="font-weight: 500;">2018</h3>
+                    </div>
+                    <div class="price">
+                        <i class="fa-solid fa-indian-rupee-sign" style="color: white;"></i>
+                        <h3 style="color: white;">4,05,00,000</h3>
+                    </div>
+                </div>
+                <div>
+                    <h3>Manual</h3>
+                    <span><h3>|</h3></span>
+                    <h3>Petrol</h3>
+                    <span><h3>|</h3></span>
+                    <h3>30000<h3>KMS</h3></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="viewcar">
+        <button>View All Cars</button>
+    </div>
+</section>
+
+<!-- car sale box -->
+
+<!-- gridbox -->
+
+<section style="margin-top: -100px;">
+    <div class="namebox">
+        <div class="smalldiv smalldiv2">
+            <div class="smallbox"></div>
+            <h3>Search New Cars By Brands</h3>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="gridbox">
+            <div>
+                <img src="bmw logo.png" alt="">
+                <h4>BMW</h4>
+            </div>
+            <div>
+                <img src="lamborghini logo.png" alt="">
+                <h4>Lamborghini</h4>
+            </div>
+            <div>
+                <img src="land rover logo.png" alt="">
+                <h4>Land Rover</h4>
+            </div>
+            <div>
+                <img src="lexus logo.png" alt="">
+                <h4>Lexus</h4>
+            </div>
+            <div>
+                <img src="audi logo.png" alt="">
+                <h4>Audi</h4>
+            </div>
+            <div>
+                <img src="jeep logo.png" alt="">
+                <h4>Jeep</h4>
+            </div>
+            <div>
+                <img src="jaguar logo.png" alt="">
+                <h4>Jaguar</h4>
+            </div>
+            <div>
+                <img src="ferrari logo.png" alt="">
+                <h4>Ferrari</h4>
+            </div>
+            <div>
+                <img src="maserati logo.png" alt="">
+                <h4>Maserati</h4>
+            </div>
+            <div>
+                <img src="rolls royce logo.png" alt="">
+                <h4>Rolls Royce</h4>
+            </div>
+            <div>
+                <img src="mercedes benz logo.png" alt="">
+                <h4>Mercedes Benz</h4>
+            </div>
+            <div>
+                <img src="porsche logo.png" alt="">
+                <h4>Porsche</h4>
+            </div>
+            <div>
+                <img src="alfa romeo logo.png" alt="">
+                <h4>Alfa Romeo</h4>
+            </div>
+            <div>
+                <img src="volvo logo.png" alt="">
+                <h4>Volvo</h4>
+            </div>
+            
+        </div>
+    </div>
+    <div class="brandcar">
+        <button>View All Brands</button>
+    </div>
+</section>
+<!-- gridbox -->
+
+<section style="margin-top: -90px;">
+    <div class="namebox">
+        <div class="smalldiv">
+            <div class="smallbox"></div>
+            <h3>Want To Sell Your Used Car?</h3>
+        </div>
+    </div>
+
+    <div class="sellinstruct">
+        <div class="selltab">
+            <img src="details.png" alt="" height="120px" width="120px">
+            <h2>Enter Details</h2>
+        </div>
+        <div class="selltab">
+            <img src="check.png" alt="" height="120px" width="120px">
+            <h2>Inspect Car</h2>
+        </div>
+        <div class="selltab">
+            <img src="estimate.png" alt="" height="120px" width="120px">
+            <h2>Estimate</h2>
+        </div>
+        <div class="selltab">
+            <img src="cash.png" alt="" height="120px" width="120px">
+            <h2>Get On Spot Cash </h2>
+        </div>
+        <div class="arrow">
+            <img src="dot-arrow.png" alt="" height="100px" width="100px">
+            <img src="dot-arrow.png" alt="" height="100px" width="100px">
+            <img src="dot-arrow.png" alt="" height="100px" width="100px">
+        </div>
+    </div>
+
+    <div class="sell sell2">
+        <button class="sellbtn sellbtn2" onclick="box()">Sell A Car</button>
+        <i class="fa-solid fa-car"></i>
+    </div>
+    
+</section>
+
+
+
+
+   <!-- Footer -->
+
+   <footer class="footer">
+    <div class="firstpart">
+      <div class="sitebox">
+          <div class="site siteone">
+              <h3 style="color: white;">Company</h3>
+              <a href="">About</a>
+              <a href="">Mission</a>
+              <a href="">Services</a>
+              <a href="">Social</a>
+          </div>
+          <div class="site sitetwo">
+              <h3 style="color: white;">Support</h3>
+              <a href="">Contact Us</a>
+              <a href="">Web Chat</a>
+              <a href="">Open Ticket</a>
+              <a href="">FAQ</a>
+          </div>
+          <!-- <div class="site sitethree">
+              <h3 style="color: white;">Contact</h3>
+              <a href=""><i class="fa-solid fa-house"></i>No.144, Gears Road, Chennai</a>
+              <a href=""><i class="fa-solid fa-envelope"></i>luxurygears@gmail.com</a>
+              <a href=""><i class="fa-solid fa-phone"></i>+91 999 777 2020</a>
+              <a href=""><i class="fa-solid fa-fax"></i>+444 25487</a>
+          </div> -->
+
+      </div>
+
+      <div class="logobox">
+          <img src="Logo.png" alt="" height="100px" width="300px">
+          <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolores iusto fugiat libero reiciendis aut exercitationem minus iste dignissimos molestiae eum, aspernatur vitae! Temporibus, itaque? Tenetur sed beatae asperiores voluptatem. "</p>
+
+      </div>
+    </div>
+    <p class="para">Our Partners</p>
+
+    <div class="slider">
+        <div class="brandbox">
+
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="brands">
+              <li class="cardss">
+                  <div class="img"><img src="rolls royce logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="bentley logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="lamborghini logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="ferrari logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="maserati logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="mercedes benz logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="bmw logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="audi logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="land rover logo.png" alt="" style="object-fit: cover;"></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="jaguar logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="jeep logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="lexus logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="volvo logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="nissan logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="mitsubishi logo.png" alt=""></div>
+              </li>
+              <li class="cardss">
+                  <div class="img"><img src="porsche logo.png" alt=""></div>
+              </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+
+        </div>
+    </div>
+    <div class="social">
+      <p>
+          Follow Us On
+      </p>
+      <div class="icon">
+          <p>|</p>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-square-google-plus"></i></a>
+          <p>|</p>
+          
+      </div>
+
+    </div>
+    <div class="bottomend">
+      <p>Copyrights &copy 2023 Luxury Gears</p>
+    </div>
+
+  </footer>
+
+
+  <!-- Footer -->
+
+ 
+    <script src="index.js"></script>
+</body>
+</html>

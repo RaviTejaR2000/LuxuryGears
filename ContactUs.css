@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header fixed */
+.header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+}
+.logo{
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+.headerbox,
+.list{
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    column-gap: 50px;
+    position: relative;
+    /* left: 150px; */
+}
+.list a{
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+.list a{
+    position: relative;
+    display: inline-block;
+}
+.list a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: transform .3s;
+}
+.list a:hover::after{
+    transform: scale(1);
+}
+.button{
+    padding: 6px 24px;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.7s;
+}
+.button:hover{
+    background:white ;
+    color: black;
+}
+
+.button:active{
+    transform: scale(0.85);
+}
+
+/* header fixed */
+
+/* Intropic */
+.bgimage{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -150;
+    display: flex;
+    justify-content: center;
+}
+.introbox{
+    /* background-image: url(tire\ mark\ red\ bw.png);
+    background-repeat: no-repeat; */
+    position: relative;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.introbox h1{
+    top: -50px;
+    color: #D3D3D3;
+    font-size: 9rem;
+    opacity: 0.5;
+}
+.introbox h4{
+    font-size: 1.5rem;
+    position: relative;
+    top: -50px;
+    color: #B31312;
+}
+
+h4 a{
+    color: #B31312;
+    font-weight: 900;
+    text-decoration: none;
+}
+/* a{
+    text-decoration: none;
+} */
+
+h4 a{
+    position: relative;
+    display: inline-block;
+}
+
+h4 a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #B31312;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: transform .3s;
+
+}
+h4 a:hover::after{
+    transform: scale(1);
+}
+
+/* Intropic */
+
+/* centerbox */
+
+.centerbox{
+    background: none;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    height: 100%;
+    width: 350px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h3{
+    margin-top: 20px;
+    
+}
+.box h4{
+    margin-top: 5px;
+    text-align: center;
+    color: #98AFC7;
+}
+
+.icons{
+    font-size: 2.5rem;
+    color: #B31312;
+}
+
+/* centerbox */
+
+/* form box */
+
+.formbox{
+    position: relative;
+    top: 50px;
+    height: 350px;
+    width: 100%;
+    transform: translateY(30px);
+    display: flex;
+    
+}
+
+.form{
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form h3{
+    text-decoration: underline;
+
+}
+input{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 10px;
+}
+.fill input:focus{
+    color: #B31312;
+    outline: none;
+    border-color: #B31312;
+}
+textarea{
+    width: 605px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10px;
+}
+
+textarea:focus{
+    color: #B31312;
+    border-color: #B31312;
+    outline: none;
+}
+
+.table{
+    height: 220px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(25%,25%);
+}
+.pinimage{
+    position: absolute;
+    overflow: hidden;
+    transform: translate(168%,-19%);
+    
+}
+
+.table h5{
+    font-size: 1rem; 
+}
+.table h4{
+    font-size: 1.2rem;
+    text-decoration: underline;
+
+}
+.time{
+    display: flex;
+    column-gap: 20px;
+}
+
+/* form box */
+
+/* maparea */
+
+.maparea{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height: 500px;
+}
+iframe{
+    width: 100%;
+}
+
+/* maparea */
+
+/* Footer */
+
+.footer{
+    position: relative;
+    top: 80px;
+    height: 680px;
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+}
+
+.firstpart{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.sitebox{
+    position: relative;
+    transform: translate(0%,-20%);
+    height: 200px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site h3{
+    font-weight: 900;
+    margin-bottom: 12px;
+
+}
+.site a{
+    color: white;
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-decoration: none;
+    position: relative;
+    display: block;
+
+}
+.siteone a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 2px;
+    background: #B31312;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: transform .3s;
+
+}
+.sitetwo a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 2px;
+    background: #B31312;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: transform .3s;
+
+}
+.site a:hover::after{
+    transform: scale(1);
+}
+
+
+.sitethree a{
+    text-decoration: none;
+    font-weight: 100;
+
+}
+.sitethree i{
+    
+    margin-right: 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.sitethree a:hover i{
+    color: #B31312;
+}
+
+
+
+
+.logobox{
+    width: 35%;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logobox p{
+    color: white;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.brandbox{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+    width: 100%;
+}
+
+.brandbox i{
+    height: 50px;
+    width: 50px;
+    background: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.brandbox i:first-child{
+    left: -60px;
+}
+.brandbox i:last-child{
+    right: -60px;
+}
+
+.brandbox .brands{
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-columns: calc((100%/3) - 12px); */
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    
+}
+.brands::-webkit-scrollbar{
+    display: none;
+}
+
+.brands .card{
+    scroll-snap-align: start;
+    /* height: 342px; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card .img img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+     
+}
+
+.social{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.social p{
+    color: white;
+}
+.icon p{
+    font-size: 2rem;
+}
+.icon a{
+    font-size: 2rem;
+}
+.icon{
+    display: flex;
+    column-gap: 10px;
+}
+.bottomend{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 0.7rem;
+
+}
+/* Footer */
